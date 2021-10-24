@@ -1,0 +1,33 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    background-image: -webkit-linear-gradient(bottom, blueviolet, #add8e6)
+}
+nav {
+    font-weight: bold;
+    font-size: larger;
+    color: blueviolet;
+    border: 2px double;
+    text-align: center;
+    width: 15em;
+    background-color: thistle;
+}
+nav ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav:hover ul {
+    display: block;
+    text-decoration: underline;
+}
+nav ul li {
+    border-top: 2px solid royalblue;
+    background-color: thistle;
+    width: 15em;
+    color: black;
+}
+nav ul li:hover {
+    background-color: blueviolet;
+}
