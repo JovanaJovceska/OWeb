@@ -26,7 +26,7 @@ nav ul li {
     border-top: 2px solid royalblue;
     background-color: thistle;
     width: 15em;
-    color: black;
+    color: blueviolet;
 }
 nav ul li:hover {
     background-color: blueviolet;
