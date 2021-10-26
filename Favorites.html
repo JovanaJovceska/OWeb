@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Design1.css">
+        <title>Favorites</title>
+        <style>
+            legend {
+                color: white;
+                font-size: larger;
+            }
+            fieldset {
+                border: 2px double white;
+                height: auto;
+            }
+            p {
+                float:left;
+                color:white;
+                font-size: large;
+            }
+            .favmovie {
+                float:right;
+                height:250px;
+                width: 200px;
+            }
+            .TheWeeknd {
+                float:right;
+                height:250px;
+                width:200px;
+            }
+            .Eminem {
+                float:right;
+                height: 250px;
+                width: 200px;
+                margin-right: 100px;
+            }
+            .recept:hover {
+                text-decoration: underline;
+            }
+            .FavFood {
+                float:right;
+                height: 250px;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="HomePage.html">Home Page</a></li>
+            <li><a class="active1" href="Favorites.html">Favorites</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Survey.html">Survey</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <br><br><br>
+        
+        <article>
+            <fieldset>
+                <legend>Music</legend>
+                <p class="music">My favourite type of music genre<br>
+                    is rap. I love listening to Eminem,<br>
+                    Wiz Khalifa, Snoop Dogg etc...<br>
+            I also listen to pop music, <br>
+            R&B/Soul music, Hip-Hop and<br> 
+            many more. One of my favourite artists<br> 
+            is Eminem, but i also like The Weeknd.</p>
+        <img src="photos/TheWeeknd.jpg" class="TheWeeknd" alt="TheWeeknd">
+        <img src="photos/Eminem.jpg" class="Eminem" alt="Eminem">
+            </fieldset>
+        </article>
+
+        <article>
+            <fieldset>
+                <legend>Food</legend>
+                <p class="food">One of my favorite dishes<br>
+                    is a tortilla wrap.<br><br><br> 
+                    My favorite recipe: <a class="recept" 
+                    href="https://www.sargento.com/recipes/dinner/chicken-tortilla-wraps/">ChickenTortillaWrap</a>
+                </p>
+                <img src="photos/tortillaWrap.jpg" class="FavFood" alt="Tortilla Wrap">
+            </fieldset>
+        </article>
+        
+        <article>
+            <fieldset>
+                <legend>Movies</legend>
+                    <p class="movie">I usually watch action movies.<br>
+                        One of my favorite movies is Braven.</p>
+                        <img src="photos/movie.jpg" class="favMovie" alt="Photo of my fav movie">
+            </fieldset>
+        </article>
+    </body>
+</html>

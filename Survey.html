@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Design1.css">
+        <title>Survey</title>
+        <style>
+            h1 {
+                text-align: center;
+                color: white;
+                -webkit-text-stroke: 1px blueviolet; 
+            }
+            strong {
+                color: white;
+                font-size: large;
+            }
+            label {
+                color: white;
+                font-family: 'Courier New', Courier, monospace;
+                font-style: italic;
+                font-size: large;
+            }
+            label:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="HomePage.html">Home Page</a></li>
+            <li><a href="Favorites.html">Favorites</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a class="active1" href="Survey.html">Survey</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <br><br><br>
+        <h1>Please fill out this short survey to help make this website better</h1>
+        <hr>
+        <form>
+            <p>
+                <strong>Name:</strong>
+                <input name="name" type="text" size=20 maxlength="25">
+            </p>
+            <p>
+                <strong>What do you like most about my website?</strong><br>
+                <textarea rows="3" cols="50"></textarea>
+            </p>
+            <p>
+                <strong>What would you like to change in the website?</strong><br>
+                <textarea rows="3" cols="50"></textarea>
+            </p>
+            <p>
+                <strong>Did you like the design of the website?</strong><br>
+                <input type="radio" name="Q1" id="Q1y">
+                <label for="Q1y">Yes</label><br>
+                <input type="radio" name="Q1" id="Q1n">
+                <label for="Q1n">No</label>
+            </p>
+            <p>
+                <strong>On a scale of 0-5, how would you rate my website?</strong>
+                <select>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option selected="selected">5</option>
+                </select>
+            </p>
+            <p>
+                <strong>Do you have any suggestions or comments?</strong><br>
+                <textarea rows="3" cols="50"></textarea>
+            </p>
+        </form>
+    </body>
+</html>
