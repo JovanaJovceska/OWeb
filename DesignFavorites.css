@@ -1,0 +1,37 @@
+legend {
+    color: white;
+    font-size: larger;
+}
+fieldset {
+    border: 2px double white;
+    height: auto;
+}
+p {
+    float:left;
+    color:white;
+    font-size: large;
+}
+.favmovie {
+    float:right;
+    height:250px;
+    width: 200px;
+}
+.TheWeeknd {
+    float:right;
+    height:250px;
+    width:200px;
+}
+.Eminem {
+    float:right;
+    height: 250px;
+    width: 200px;
+    margin-right: 100px;
+}
+.recept:hover {
+    text-decoration: underline;
+}
+.FavFood {
+    float:right;
+    height: 250px;
+    width: 200px;
+}

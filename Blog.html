@@ -1,17 +1,181 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="Design1.css">
+        <link rel="stylesheet" type="text/css" href="Design.css">
+        <link rel="stylesheet" type="text/css" href="DesignBlog.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
         <title>Blog</title>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <ul>
-            <li><a href="HomePage.html">Home Page</a></li>
-            <li><a href="Favorites.html">Favorites</a></li>
-            <li><a href="Gallery.html">Gallery</a></li>
-            <li><a class="active1" href="Blog.html">Blog</a></li>
-            <li><a href="Survey.html">Survey</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo"><i class="fab fa-centos"></i>JJ</h></a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="HomePage.html" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Favorites.html" class="navbar__links">Favorites</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Gallery.html" class="navbar__links">Gallery</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Blog.html" class="navbar__links">Blog</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Survey.html" class="navbar__links">Survey</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Contact.html" class="navbar__links">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+
+
+        <h1>My Blogs</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="blog-card blog-card-blog">
+                        <div class="blog-card-image">
+                            <a href="#"> <img class="img" src="photos/northernLights.jpg"> </a>
+                            <div class="ripple-cont"></div>
+                        </div>
+                        <div class="blog-table">
+                            <h6 class="blog-category blog-text-success"></h6>
+                                <h4 class="blog-card-caption">
+                                    <a href="#">The science of the northern lights</a>
+                                </h4>
+                                <p class="blog-card-description">Where is the best place to see the Northern Lights?</p>
+                                <div class="ftr">
+                                    <div class="button">
+                                        <form>
+                                            <input id="showMore" type="button" value="Read More">
+                                        </form>
+                                    </div>
+                                    <div class="stats"> <i class="far fa-clock"></i> Nov, 2021 </div>
+                                </div>
+                                <br>
+                                <div class="full-card" id="full-card">
+                                    <p class="blog-card-description">
+                                        <i class="fas fa-angle-right"></i>
+                                        <h3>If we had a pound for every time we have been asked this question...</h3><br>
+                                        Imagine if there was one best place to see 
+                                        the Northern Lights! Overnight it would become the 
+                                        Costa del Aurora with high rise Northern Lights 
+                                        viewing hotels and people in the street handing out 
+                                        leaflets offering a free drink with every Aurora chase.
+                                        Mercifully, the unpredictable nature of the Aurora means
+                                        that it retains its mystical allure and it’s fair to say
+                                        that you stand as much chance of seeing them from a vantage
+                                        point in Norway as you do from a frozen lake in Finland.<br>
+                                        <i class="fas fa-angle-right"></i> 
+                                        <h3>Southern Lights, Northern Lights, Extra-Terrestrial Lights</h3><br>
+                                        The lights appear in both the Northern and Southern Hemispheres and even on other planets but from an Aurora hunting point of view, only the Northern Lights are a genuinely viable option.
+The Southern Lights or Aurora Australis occur most frequently over Antarctica which really only appeals to a few research scientists and penguins. When the Aurora Australis is very active then the lights may be visible from Australia, New Zealand and South Africa but these occasions are few and far between and certainly don’t justify travelling to such places purely in search of the Southern Lights.
+The lights also appear near the magnetic poles of other planets and if you search the internet you can find images of Auroras above the likes of Jupiter and Saturn. Unfortunately, we’re not likely to be sending people into space on Aurora hunting missions any time soon so our focus remains firmly in Earth’s Northern Hemisphere and Northern Scandinavia especially.
+                                        <i class="fas fa-angle-right"></i>
+                                        <h3>The Aurora Zone</h3><br>
+                                        The Aurora is most frequently visible in Northern Scandinavia in a band that stretches between 66°N and 69°N, which we call the Aurora Zone. The band can expand when geomagnetic activity is high which is why we can occasionally see the Aurora from northern parts of the UK. However, we are currently in the declining phase of the sun’s activity cycle and, as a result, the Aurora is more likely to occur as a result of coronal holes rather than more violent coronal mass ejections. Essentially, the ferocity of solar wind emanating from the sun is likely to reduce which means the reaction with the gases in our atmosphere will be less pronounced. This will mean that the next few years will very probably see Auroral displays becoming much more localised to the Aurora Zone.
+                                        As solar activity slows, it will become increasingly important to head north in order to give yourself the very best chance of witnessing a magical light show. To make sure you see the spectacle at its very best you will also need to ensure that you are in a location within that Auroral band that is far removed from any significant light pollution; artificial light from large cities and ski resorts can dull the Aurora to the point of invisibility so we strongly recommend staying outside their confines.
+                                        The Auroral band stretches across Finland, Sweden, Norway, Iceland, Greenland and Canada. We feature holidays to all of these countries, and every holiday we offer has been expertly designed to maximise your opportunity to see the Northern Lights.
+                                    </p>
+                                                  
+                                </div>
+                                <div class="buttonClose" id="buttonClose">
+                                    <form>
+                                        <input id="close" type="button" value="Close">
+                                    </form>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blog-card blog-card-blog">
+                            <div class="blog-card-image">
+                                <a href="#"> <img class="img" src="/photos/QuantumComputing.jpg"> </a>
+                                <div class="ripple-cont"></div>
+                            </div>
+                            <div class="blog-table">
+                                <h6 class="blog-category blog-text-success"></h6>
+                                <h4 class="blog-card-caption">
+                                    <a href="#">Quantum Computing And Machine Learning: The Future</a>
+                                </h4>
+                                <p class="blog-card-description">With the rise of the fourth industrial revolution, digital innovation became the precursor to global evolution; with the tech industry’s universal value shooting up as various companies adopted the algorithm-based artificial intelligence (AI) technology.</p>
+                                <div class="ftr">
+                                    <div class="button">
+                                        <form>
+                                            <input id="showMore1" type="button" value="Read More">
+                                        </form>
+                                    </div>
+                                    <div class="stats"> <i class="far fa-clock"></i> Nov, 2021 </div>
+                                </div>
+                                <br>
+                                <div class="full-card1" id="full-card1">
+                                    <p class="blog-card-description">
+                                        <i class="fas fa-angle-right"></i> 
+                                        <h3>Quantum Computing and Its reliance on Machine Learning</h3><br>
+                                        A lot of machine learning Big tech companies are aware of the importance of this are investing heavily in quantum machine learning, a pool of hardware for machine learning by an entirely new type of computing device known as the quantum computer.
+                                        Quantum computing, a computation method that make use of the collective properties of quantum states to perform calculations can be said to be one of the few elements with high-level capabilities of taking machine learning abilities to greater heights. The speed of this process helps in faster data processing while delivering a sophisticated level of quantum mechanics to resolve complicated issues.
+                                        Despite the fact that there is no commercially deployed quantum computer available, there seems to be heavy flow of investment into the fast growing industry.
+                                        <i class="fas fa-angle-right"></i> 
+                                        <h3>Automated ML and the potential to alter future landscape</h3><br>
+                                        Auto Machine learning, is an aspect of machine learning that self-regulates the process of using algorithms to perform life tasks and an example of these tasks is when Auto ML is drafted to locate an algorithm that can be worked on or to know if some algorithms are  missing.
+                                        AutoML can also be used to automate certain machine learning models like data pre-processing to improve data quality, feature engineering to assist in creating more adjustable features on input data, feature extraction to deliver new features to enhance predictions, and much more.
+                                        <i class="fas fa-angle-right"></i>
+                                        <h3>The Incorporation of ML with different sectors</h3><br>
+                                        What has been perceived as the first small leap into the future is the direct incorporation of the Machine Learning technology into our everyday lives, with ML identified as the definite overpass that would propel the world’s digital fate.
+                                        With the various adoption of machine learning technologies by different industries to deliver radical advancements in specific functionalities, the future of full automation is nigh.
+                                        Machine learning for instance play a very pivotal role in the health sectors, which included the pharmaceutical sub-sector, as the healthcare industry helps in provision of intense data sums. With the implementation of machine learning strategies there can be improved prediction and treatment of diseases. But the deployment of this technology can only happen by the enablement of analysis of a very large range of data that were drawn on previous studies, individual demographics, and health reports to deliver accurate predictions.
+                                        Many industries have already optimized their business strategies with the assistance of ML techniques, others in the R&D phase are gearing up to reach such premise.
+                                    </p>
+                                </div>
+                                <div class="buttonClose1" id="buttonClose1">
+                                    <form>
+                                        <input id="close1" type="button" value="Close">
+                                    </form>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="footer__container">
+            <div class="social__media">
+                <div class="social__media--wrap">
+                    <div class="footer__logo">
+                        <a href="/" id="footer__logo"><i class="fab fa-centos"></i>JJ</a>
+                    </div>
+                    <p class="website__right">© Jovana Jovceska 2020.</p>
+                    <div class="social__icons">
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="page.js"></script>
+        <script src="blogScript.js"></script>
+        
     </body>
 </html>
