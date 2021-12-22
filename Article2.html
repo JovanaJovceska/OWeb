@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Design.css">
+        <link rel="stylesheet" type="text/css" href="DesignBlog.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <title>Blog-Article</title>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            const d = new Date();
+            let name = month[d.getMonth()];
+            let year = d.getFullYear();
+            var god = year.toString();
+            var datum = name + " " + god;
+            $(document).ready(function() {
+                $('#data').text(datum);
+            });
+        </script>
+        <style>
+            #blog-article {
+                padding-left: 8%;
+                padding-right: 8%;
+                background-image: url(./photos/blogbckg.png);
+            }
+            .article-container {
+                background-color: #ffffff;
+                border-left: 1px solid rgba(0,0,0,0.13);
+                border-right: 1px solid rgba(0,0,0,0.13);
+                padding: 30px;
+            }
+            
+            .article-main-heading {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .article-main-heading h1{
+                color: #313131;
+                font-size: 2rem;
+                font-weight: 600;
+                line-height: 40px;
+            }
+            .by-date {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+            .article-by, 
+            .article-date {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px;
+                color: #838eab;
+            }
+            .article-by i,
+            .article-date i{
+                margin: 0px 10px;
+            }
+            .article-img {
+                width: 100%;
+                min-height: 500px;
+                margin: 10px 0px;
+                display: flex;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .article-img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            .article-text {
+                display: flex;
+                flex-direction: column;
+            }
+            .article-text-box {
+                margin: 10px 0px;
+                box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.06);
+                padding: 10px;
+                border-left: 2px solid #20232b;
+                background-color: #ffffff;
+            }
+            .article-text-box strong {
+                color: #20232b;
+                font-size: 1.3rem;
+                margin-top: 4px;
+                font-weight: 500;
+            }
+            .article-text-box p {
+                color: #6d6d6d;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo"><i class="fab fa-centos"></i>JJ</h></a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="HomePage.html" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Favorites.html" class="navbar__links">Favorites</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Gallery.html" class="navbar__links">Gallery</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Blog.html" class="navbar__links">Blog</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Survey.html" class="navbar__links">Survey</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Contact.html" class="navbar__links">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+
+        <section id="blog-article">
+        
+            <div class="article-container">
+                <div class="article-main-heading">
+                    <h1>Misbehaving muons</h1>
+                </div>
+
+                <div class="by-date">
+                    <div class="article-by">
+                        <i class="fas fa-user"></i>
+                        <span>Creator</span>
+                    </div>
+                    <div class="article-date">
+                        <i class="far fa-clock"></i>
+                        <p><span id="data"></span></p>
+                    </div>
+                </div>
+
+                <div class="article-img">
+                    <img src="photos/blog/post3.jpg">
+                </div>
+
+                <div class="article-text">
+                    <div class="article-text-box">
+                        <p>
+                            Nothing gets physicists more excited than evidence of a new fundamental particle. Researchers with the Muon g–2 experiment at Fermilab in Batavia, Ill., flung billions of muons around the lab’s giant magnet and found that the rate at which the orientation of the muons’ magnetic poles wobbled strayed from theoretical predictions. The odd behavior suggests that hidden particles are influencing the muons’ magnetic properties, challenging the standard model of particle physics describing the universe’s fundamental forces and elementary particles (SN: 5/8/21 & 5/21/21, p. 6). But it will take more data to convince physicists, who are still refining their predictions of muon behavior.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="footer__container">
+            <div class="social__media">
+                <div class="social__media--wrap">
+                    <div class="footer__logo">
+                        <a href="/" id="footer__logo"><i class="fab fa-centos"></i>JJ</a>
+                    </div>
+                    <p class="website__right">© Jovana Jovceska 2020.</p>
+                    <div class="social__icons">
+                        <a href="https://www.facebook.com/jovana.jovceska/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_jjovceska/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/_yyofe" class="social__icon--link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.pinterest.com/jovanajovceska/_created/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="page.js"></script>
+    </body>
+</html>

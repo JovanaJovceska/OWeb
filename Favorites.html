@@ -5,8 +5,28 @@
         <link rel="stylesheet" type="text/css" href="Design.css">
         <link rel="stylesheet" type="text/css" href="DesignFavorites.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-        <title>Contact</title>
+        <title>Favorites</title>
         <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var music = $("#music");
+                var movies = $("#movies");
+                var food = $("#food");
+
+                music.on("click", function() {
+                    window.location.href = "Music.html";
+                });
+
+                movies.on("click", function() {
+                    window.location.href = "Movies.html";
+                });
+
+                food.on("click", function() {
+                    window.location.href = "Food.html";
+                });
+            });
+        </script>
     </head>
     <body>
         <nav class="navbar">
@@ -40,41 +60,22 @@
             </div>
         </nav>
 
-        <article>
-            <fieldset>
-                <legend>Music</legend>
-                <p class="music">My favourite type of music genre<br>
-                    is rap. I love listening to Eminem,<br>
-                    Wiz Khalifa, Snoop Dogg etc...<br>
-            I also listen to pop music, <br>
-            R&B/Soul music, Hip-Hop and<br> 
-            many more. One of my favourite artists<br> 
-            is Eminem, but i also like The Weeknd.</p>
-        <img src="photos/TheWeeknd.jpg" class="TheWeeknd" alt="TheWeeknd">
-        <img src="photos/Eminem.jpg" class="Eminem" alt="Eminem">
-            </fieldset>
-        </article>
+        <div class="fav-info">
+            <div class="card" id="music">
+                <i class="card-icon fas fa-music"></i>
+                <p>Music</p>
+            </div>
 
-        <article>
-            <fieldset>
-                <legend>Food</legend>
-                <p class="food">One of my favorite dishes<br>
-                    is a tortilla wrap.<br><br><br> 
-                    My favorite recipe: <a class="recept" 
-                    href="https://www.sargento.com/recipes/dinner/chicken-tortilla-wraps/">ChickenTortillaWrap</a>
-                </p>
-                <img src="photos/tortillaWrap.jpg" class="FavFood" alt="Tortilla Wrap">
-            </fieldset>
-        </article>
-        
-        <article>
-            <fieldset>
-                <legend>Movies</legend>
-                    <p class="movie">I usually watch action movies.<br>
-                        One of my favorite movies is Braven.</p>
-                        <img src="photos/movie.jpg" class="favMovie" alt="Photo of my fav movie">
-            </fieldset>
-        </article>
+            <div class="card" id="food">
+                <i class="card-icon fas fa-hamburger"></i>
+                <p>Food</p>
+            </div>
+
+            <div class="card" id="movies">
+                <i class="card-icon fas fa-video"></i>
+                <p>Movies</p>
+            </div>
+        </div>
         
         <div class="footer__container">
             <div class="social__media">
@@ -84,16 +85,16 @@
                     </div>
                     <p class="website__right">© Jovana Jovceska 2020.</p>
                     <div class="social__icons">
-                        <a href="/" class="social__icon--link" target="_blank">
+                        <a href="https://www.facebook.com/jovana.jovceska/" class="social__icon--link" target="_blank">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a href="/" class="social__icon--link" target="_blank">
+                        <a href="https://www.instagram.com/_jjovceska/" class="social__icon--link" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="/" class="social__icon--link" target="_blank">
+                        <a href="https://twitter.com/_yyofe" class="social__icon--link" target="_blank">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="/" class="social__icon--link" target="_blank">
+                        <a href="https://www.pinterest.com/jovanajovceska/_created/" class="social__icon--link" target="_blank">
                             <i class="fab fa-pinterest"></i>
                         </a>
                     </div>

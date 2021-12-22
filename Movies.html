@@ -4,9 +4,70 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="Design.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-        <title>My Web Page</title>
         <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <title>Movies</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".back").on("click", function() {
+                    window.location.href = "Favorites.html";
+                });
+            });
+        </script>
+
+        <style>
+            .container {
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./photos/moviesbckg.jpg);
+                background-position: center;
+                background-size: cover;
+                padding-left: 8%;
+                padding-right: 8%;
+                box-sizing: border-box;
+            }
+            .row {
+                display: flex;
+                height: 88%;
+                align-items: center;
+            }
+            .col {
+                flex-basis: 50%;
+            }
+            h1 {
+                color: #fff;
+                font-size: 80px;
+            }
+            p {
+                color: #fff;
+                font-size: 18px;
+                line-height: 15px;
+            }
+            button {
+                width: 180px;
+                color: #000;
+                font-size: 12px;
+                padding: 12px 0;
+                background: #fff;
+                border: 0;
+                border-radius: 20px;
+                outline: none;
+                margin-top: 30px;
+            }
+            .youtube-embeds {
+                width: 100%;
+                padding-left: 300px;
+            }
+            .youtube-embed {
+                background: transparent;
+                margin-bottom: 5px;
+            }
+            h3{
+                color: white;
+            }
+        </style>
     </head>
+
     <body>
         <nav class="navbar">
             <div class="navbar__container">
@@ -18,7 +79,7 @@
                 </div>
                 <ul class="navbar__menu">
                     <li class="navbar__item">
-                        <a href="/" class="navbar__links">Home</a>
+                        <a href="HomePage.html" class="navbar__links">Home</a>
                     </li>
                     <li class="navbar__item">
                         <a href="Favorites.html" class="navbar__links">Favorites</a>
@@ -39,44 +100,27 @@
             </div>
         </nav>
 
-        <div class="main">
-            <div class="main__container">
-                <div class="main__content">
-                    <h1>WELCOME</h1>
-                    <h2>TO MY PAGE</h2>
-                    <p>Click the button if you want to know more about some of my favorite things</p>
-                    <button id = "main_btn" class="main__btn"><a href="Favorites.html">Click Here</a></button>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>My favorite movies</h1>
+                    <p>My favorite movie genre is comedy, and I mostly watch comedy movies. But I also love watching action movies and sometimes drama movies.</p>
+                    <button class="back" type="button"><i class="fas fa-long-arrow-alt-left"></i></button>
                 </div>
-                <div class="main__img--container">
-                    <img src="photos/me.jpg" alt="pic" id="main__img">
+                <div class="youtube-embeds">
+                    <h3>Horrible Bosses</h3>
+                    <div class="youtube-embed">
+                        <iframe width="350px" height="215px" src="https://www.youtube.com/embed/VpUeQV8sdOc">
+                        </iframe>
+                    </div>
+                    <h3>Braven</h3>
+                    <div class="youtube-embed">
+                        <iframe width="350px" height="215px" src="https://www.youtube.com/embed/hOwIQNA9A8I"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="txt" id="aboutMe">
-            <div class="txt__container">
-                <div class="txt__card">
-                    <h2>About Me</h2>
-                    <p>My name is Jovana.<br>
-                        I'm 20 years old.<br>
-                        I'm from Skopje, Macedonia.<br>
-                        I study at the Faculty of Electrical Engineering and Information Technologies, <br>
-                        majoring in Computer Technologies and Engineering.<br>
-                    </p>
-                </div>
-                <div class="txt__card">
-                    <h2>Things i like to do</h2>
-                    <p>My favourite thing to do when I'm bored<br>
-                    is to read a book. Some of my favourite genres<br>
-                    are Crime fiction, Science fiction, romance,<br>
-                    Psychological books..<br>
-                    Another thing I love doing is listening to music,<br>
-                    especially rap and pop music.<br>
-                    I love to go for walks in the evening.</p>
-                </div>
-            </div>
-        </div>
-        
         <div class="footer__container">
             <div class="social__media">
                 <div class="social__media--wrap">
@@ -101,6 +145,7 @@
                 </div>
             </div>
         </div>
+
         <script src="page.js"></script>
     </body>
 </html>

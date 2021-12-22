@@ -2,7 +2,11 @@ body {
     background-color: #141414;
 }
 
-.fav-info {
+h1{
+    text-align: center;
+    color: #ff7675;
+}
+.contact-info{
     margin: 0;
     padding: 0;
     font-family: "montserrat", sans-serif;
@@ -17,7 +21,9 @@ body {
 }
 
 .card {
-    background-image: url(./photos/bckg.jpg);
+    background-image: url(./photos/contactbckg.jpg);
+    background-position: center;
+    background-size: cover;
     padding: 0 20px;
     margin: 0 10px;
     width: calc(33% - 20px);
@@ -33,7 +39,7 @@ body {
 
 .card-icon {
     font-size: 28px;
-    background: #ff8177;
+    background: #ff7675;
     width: 60px;
     height: 60px;
     text-align: center;
@@ -44,15 +50,14 @@ body {
 
 .card:hover .card-icon{
     background: none;
-    color: #ff8177;
+    color: #ff7675;
     transform: scale(1.6);
 }
 
 .card p{
     margin-top: 20px;
-    font-weight: 700;
+    font-weight: 300;
     letter-spacing: 2px;
-    font-weight: bolder;
     max-height: 0;
     opacity: 0;
     transition: 0.3s linear;
@@ -61,11 +66,12 @@ body {
 .card:hover p{
     max-height: 40px;
     opacity: 1;
-    color: #fff;
+    color: #ff7675;
+    font-weight: bolder;
 }
 
 @media screen and (max-width:800px) {
-    .fav-info {
+    .contact-info {
         flex-direction: column;
     }
     .card {

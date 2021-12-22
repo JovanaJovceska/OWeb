@@ -3,9 +3,30 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="Design.css">
+        <link rel="stylesheet" type="text/css" href="DesignContact.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
         <title>Contact</title>
         <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var clickM = $("#mail");
+                var clickP = $("#pint");
+                var clickF = $("#fb");
+
+                clickM.on("click", function() {
+                    window.location.href = "mailto:jovana.jovceska@gmail.com";
+                });
+
+                clickP.on("click", function() {
+                    window.location.href = "https://www.pinterest.com/jovanajovceska/_created/";
+                });
+
+                clickF.on("click", function() {
+                    window.location.href = "https://www.facebook.com/jovana.jovceska";
+                });
+            });
+        </script>
     </head>
     <body>
         <nav class="navbar">
@@ -38,6 +59,24 @@
                 </ul>
             </div>
         </nav>
+
+        <h1>Feel free to contact me any time.</h1>
+        <div class="contact-info">
+            <div class="card" id="mail">
+                <i class="card-icon far fa-envelope"></i>
+                <p>jovceska.jovana@gmail.com</p>
+            </div>
+
+            <div class="card" id="pint">
+                <i class="card-icon fab fa-pinterest"></i>
+                <p>@jovanajovceska</p>
+            </div>
+
+            <div class="card" id="fb">
+                <i class="card-icon fab fa-facebook"></i>
+                <p>Jovana Jovceska</p>
+            </div>
+        </div>
         
         <div class="footer__container">
             <div class="social__media">
@@ -47,16 +86,16 @@
                     </div>
                     <p class="website__right">© Jovana Jovceska 2020.</p>
                     <div class="social__icons">
-                        <a href="/" class="social__icon--link" target="_blank">
+                        <a href="https://www.facebook.com/jovana.jovceska/" class="social__icon--link" target="_blank">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a href="/" class="social__icon--link" target="_blank">
+                        <a href="https://www.instagram.com/_jjovceska/" class="social__icon--link" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="/" class="social__icon--link" target="_blank">
+                        <a href="https://twitter.com/_yyofe" class="social__icon--link" target="_blank">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="/" class="social__icon--link" target="_blank">
+                        <a href="https://www.pinterest.com/jovanajovceska/_created/" class="social__icon--link" target="_blank">
                             <i class="fab fa-pinterest"></i>
                         </a>
                     </div>

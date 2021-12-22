@@ -5,8 +5,55 @@
         <link rel="stylesheet" type="text/css" href="Design.css">
         <link rel="stylesheet" type="text/css" href="DesignGallery.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-        <title>My Web Page</title>
+        <title>Gallery</title>
         <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var numLike = $("#numOfLikes");
+                let count=0;
+                $("#like").on("click", function(){
+                    count++;
+                    numLike.text("Number of likes: " + count);
+                });
+
+                var numLike1 = $("#numOfLikes1");
+                let count1 = 0;
+                $("#like1").on("click", function() {
+                    count1++;
+                    numLike1.text("Number of likes: " + count1);
+                });
+
+                var numLike2 = $("#numOfLikes2");
+                let count2 = 0;
+                $("#like2").on("click", function() {
+                    count2++;
+                    numLike2.text("Number of likes: " + count2);
+                });
+
+                var numLike3 = $("#numOfLikes3");
+                let count3 = 0;
+                $("#like3").on("click", function() {
+                    count3++;
+                    numLike3.text("Number of likes: " + count3);
+                });
+
+                var numLike4 = $("#numOfLikes4");
+                let count4 = 0;
+                $("#like4").on("click", function() {
+                    count4++;
+                    numLike4.text("Number of likes: " + count4);
+                });
+
+                var numLike5 = $("#numOfLikes5");
+                let count5 = 0;
+                $("#like5").on("click", function() {
+                    count5++;
+                    numLike5.text("Number of likes: " + count5);
+                });
+            });
+        </script>
     </head>
     <body>
         <nav class="navbar">
@@ -39,46 +86,143 @@
                 </ul>
             </div>
         </nav>
-        <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-              <symbol id="icon-heart" viewBox="0 0 32 32">
-                <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-              </symbol>
-            </defs>
-        </svg>
 
-        <div class="full-img" id="fullImgBox">
-            <svg class="icon icon-heart">
-                <use xlink:href="#icon-heart"></use>
-            </svg>
-            <img src="/photos/images/img1.png" id="fullImg">
-            <span id="exit" onclick="closeFullImg()">X</span>
-            <div class="container">
-                <span id="Numlike">Number of Likes: 0</span>
-            <br><br><br>
-                <form>
-                    <div class="form-group">
-                        <textarea class="form-control status-box" rows="3" placeholder="Enter your comment here..."></textarea>
-                    </div>
-                </form>
-                <div class="button-group pull-right">
-                    <p class="counter"></p>
-                    <a href="#" class="btn btn-primary">Post</a>
+        <div class="card">
+            <img src="/photos/images/img1.jpg">
+            <div class="section">
+                <div class="like">
+                    <i id="like" class="far fa-thumbs-up"></i>
+                    <p id="numOfLikes"></p>
                 </div>
-                <ul class="posts"></ul>
+                
+                <div class="comment">
+                    <h3>Comment Section</h3>
+                    <label>Name:</label><input id="uname" type="text" placeholder="Enter your name here...">
+                    <label>Comment:</label><input id="wText" type="text" placeholder="Enter your comment here...">
+                    <button onclick="addItem()" >Post</button>
+                    <div class="comments">
+                        <ul id="dynamic-listUName">
+                        </ul>
+                        <ul id="dynamic-listCom">
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="img-gallery">
-            <img src="/photos/images/img1.jpg" onclick="openFullImg(this.src)">
-            <img src="/photos/images/img2.jpg" onclick="openFullImg(this.src)">
-            <img src="/photos/images/img3.jpg" onclick="openFullImg(this.src)">
-            <img src="/photos/images/img4.jpg" onclick="openFullImg(this.src)">
-            <img src="/photos/images/img5.jpg" onclick="openFullImg(this.src)">
-            <img src="/photos/images/img6.jpg" onclick="openFullImg(this.src)">
-            <img src="/photos/images/img7.jpg" onclick="openFullImg(this.src)">
-            <img src="/photos/images/img8.jpg" onclick="openFullImg(this.src)">
-            <img src="/photos/images/img9.jpg" onclick="openFullImg(this.src)">
+        <div class="card">
+            <img src="/photos/images/img2.jpg">
+            <div class="section">
+                <div class="like">
+                    <i id="like1" class="far fa-thumbs-up"></i>
+                    <p id="numOfLikes1"></p>
+                </div>
+
+                <div class="comment">
+                    <h3>Comment Section</h3>
+                    <label>Name:</label><input id="uname1" type="text" placeholder="Enter your name here...">
+                    <label>Comment:</label><input id="wText1" type="text" placeholder="Enter your comment here...">
+                    <button onclick="addItem1()" >Post</button>
+                    <div class="comments">
+                        <ul id="dynamic-listUName1">
+                        </ul>
+                        <ul id="dynamic-listCom1">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/photos/images/img3.jpg">
+            <div class="section">
+                <div class="like">
+                    <i id="like2" class="far fa-thumbs-up"></i>
+                    <p id="numOfLikes2"></p>
+                </div>
+
+                <div class="comment">
+                    <h3>Comment Section</h3>
+                    <label>Name:</label><input id="uname2" type="text" placeholder="Enter your name here...">
+                    <label>Comment:</label><input id="wText2" type="text" placeholder="Enter your comment here...">
+                    <button onclick="addItem2()" >Post</button>
+                    <div class="comments">
+                        <ul id="dynamic-listUName2">
+                        </ul>
+                        <ul id="dynamic-listCom2">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/photos/images/img4.jpg">
+            <div class="section">
+                <div class="like">
+                    <i id="like3" class="far fa-thumbs-up"></i>
+                    <p id="numOfLikes3"></p>
+                </div>
+
+                <div class="comment">
+                    <h3>Comment Section</h3>
+                    <label>Name:</label><input id="uname3" type="text" placeholder="Enter your name here...">
+                    <label>Comment:</label><input id="wText3" type="text" placeholder="Enter your comment here...">
+                    <button onclick="addItem3()" >Post</button>
+                    <div class="comments">
+                        <ul id="dynamic-listUName3">
+                        </ul>
+                        <ul id="dynamic-listCom3">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/photos/images/img5.jpg">
+            <div class="section">
+                <div class="like">
+                    <i id="like4" class="far fa-thumbs-up"></i>
+                    <p id="numOfLikes4"></p>
+                </div>
+
+                <div class="comment">
+                    <h3>Comment Section</h3>
+                    <label>Name:</label><input id="uname4" type="text" placeholder="Enter your name here...">
+                    <label>Comment:</label><input id="wText4" type="text" placeholder="Enter your comment here...">
+                    <button onclick="addItem4()" >Post</button>
+                    <div class="comments">
+                        <ul id="dynamic-listUName4">
+                        </ul>
+                        <ul id="dynamic-listCom4">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="card">
+            <img src="/photos/images/img6.jpg">
+            <div class="section">
+                <div class="like">
+                    <i id="like5" class="far fa-thumbs-up"></i>
+                    <p id="numOfLikes5"></p>
+                </div>
+
+                <div class="comment">
+                    <h3>Comment Section</h3>
+                    <label>Name:</label><input id="uname5" type="text" placeholder="Enter your name here...">
+                    <label>Comment:</label><input id="wText5" type="text" placeholder="Enter your comment here...">
+                    <button onclick="addItem5()" >Post</button>
+                    <div class="comments">
+                        <ul id="dynamic-listUName5">
+                        </ul>
+                        <ul id="dynamic-listCom5">
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <div class="footer__container">
@@ -89,24 +233,23 @@
                     </div>
                     <p class="website__right">© Jovana Jovceska 2020.</p>
                     <div class="social__icons">
-                        <a href="/" class="social__icon--link" target="_blank">
+                        <a href="https://www.facebook.com/jovana.jovceska/" class="social__icon--link" target="_blank">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a href="/" class="social__icon--link" target="_blank">
+                        <a href="https://www.instagram.com/_jjovceska/" class="social__icon--link" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="/" class="social__icon--link" target="_blank">
+                        <a href="https://twitter.com/_yyofe" class="social__icon--link" target="_blank">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="/" class="social__icon--link" target="_blank">
+                        <a href="https://www.pinterest.com/jovanajovceska/_created/" class="social__icon--link" target="_blank">
                             <i class="fab fa-pinterest"></i>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="galleryScript.js"></script>
-        <script src="commentScript.js"></script>
+        <script src="gallery.js"></script>
         <script src="page.js"></script>
     </body>
 </html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Design.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <title>Music</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var bttn = $(".back");
+                bttn.on("click", function() {
+                    window.location.href = "Favorites.html";
+                });
+            });
+        </script>
+
+        <style>
+            .container {
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./photos/musicbckg.jpeg);
+                background-position: center;
+                background-size: cover;
+            }
+            .row {
+                display: flex;
+                height: 88%;
+                align-items: center;
+            }
+            .col {
+                margin-left: 50px;
+                flex-basis: 50%;
+            }
+            h1 {
+                color: #fff;
+                font-size: 100px;
+            }
+            p {
+                color: #fff;
+                font-size: 19px;
+                line-height: 15px;
+            }
+            button {
+                width: 180px;
+                color: #000;
+                font-size: 12px;
+                padding: 12px 0;
+                background: #fff;
+                border: 0;
+                border-radius: 20px;
+                outline: none;
+                margin-top: 30px;
+                cursor: pointer;
+            }
+            .spotify-embeds {
+                width: 100%;
+                padding: 30px;
+            }
+            .spotify-embed {
+                background: transparent;
+                margin-bottom: 5px;
+            }
+            iframe {
+                display: block;
+                transition: opacity 0.125s;
+            }
+            .p-icon {
+                color: #ff8177;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo"><i class="fab fa-centos"></i>JJ</h></a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="HomePage.html" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Favorites.html" class="navbar__links">Favorites</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Gallery.html" class="navbar__links">Gallery</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Blog.html" class="navbar__links">Blog</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Survey.html" class="navbar__links">Survey</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="Contact.html" class="navbar__links">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>My favorite songs</h1>
+                    <p>I listen to a variety of music genres. These are my favorites. Hope you enjoy.<i class="p-icon far fa-smile-beam"></i></p>
+                    <button class="back" type="button"><i class="fas fa-long-arrow-alt-left"></i></button>
+                </div>
+                <div class="spotify-embeds">
+                    <div class="spotify-embed">
+                        <iframe src="https://open.spotify.com/embed/track/2IO7yf562c1zLzpanal1DT?utm_source=generator" width="340" height="80" frameBorder="0" allowtransparency="true"></iframe>
+                    </div>
+                    <div class="spotify-embed">
+                        <iframe src="https://open.spotify.com/embed/track/1eV81a6H4xDdpi8r2C4tQT?utm_source=generator" width="340" height="80" frameBorder="0" allowtransparency="true"></iframe>
+                    </div>
+                    <div class="spotify-embed">
+                        <iframe src="https://open.spotify.com/embed/track/0b6wdul3A5sQNpIOv03OxP?utm_source=generator" width="340" height="80" frameBorder="0" allowtransparency="true"></iframe>
+                    </div>
+                    <div class="spotify-embed">
+                        <iframe src="https://open.spotify.com/embed/track/23wfXwnsPZYe5A1xXRHb3J?utm_source=generator" width="340" height="80" frameBorder="0" allowtransparency="true"></iframe>
+                    </div>
+                </div>
+
+                <div class="spotify-embeds">
+                    <div class="spotify-embed">
+                        <iframe src="https://open.spotify.com/embed/track/0Aqi7ArnBrGblW5T6p2jmD?utm_source=generator" width="340" height="80" frameBorder="0" allowtransparency="true"></iframe>
+                    </div>
+                    <div class="spotify-embed">
+                        <iframe src="https://open.spotify.com/embed/track/4CDIEKHMb2MBgvgHBkhiJD?utm_source=generator" width="340" height="80" frameBorder="0" allowtransparency="true"></iframe>
+                    </div>
+                    <div class="spotify-embed">
+                        <iframe src="https://open.spotify.com/embed/track/2emJSH0TxyqTfdwUuGfg1c?utm_source=generator" width="340" height="80" frameBorder="0" allowtransparency="true"></iframe>
+                    </div>
+                    <div class="spotify-embed">
+                        <iframe src="https://open.spotify.com/embed/track/7vyTbu85iohUtoHcbrVaNW?utm_source=generator" width="340" height="80" frameBorder="0" allowtransparency="true"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__container">
+            <div class="social__media">
+                <div class="social__media--wrap">
+                    <div class="footer__logo">
+                        <a href="/" id="footer__logo"><i class="fab fa-centos"></i>JJ</a>
+                    </div>
+                    <p class="website__right">© Jovana Jovceska 2020.</p>
+                    <div class="social__icons">
+                        <a href="https://www.facebook.com/jovana.jovceska/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_jjovceska/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/_yyofe" class="social__icon--link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.pinterest.com/jovanajovceska/_created/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="page.js"></script>
+    </body>
+</html>
